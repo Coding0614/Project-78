@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title> Family Members </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1> My Family Members </h1>
+        <br>
+        <img src="Ananya.jpg" id="Members_Image">
+        <br>
+        <h3 id="Member_Name"> Ananya Acharya </h3>
+        <button id="Next_Button" type="button" onclick="Update();"> Next </button>
+        <script>
+            var images = ["Ananya.jpg","Arnav.jpg","Aparna.jpg","Chandan.jpg"];
+            var names = ["Ananya Acharya","Arnav Acharya","Aparna Sakhalkar","Chandan Acharya"];
+            var i = 0;
+            function Update(){
+                i++;
+                var array_value_number = 4
+                if(i>array_value_number){
+                    i=0;
+                }
+                var updated_image = images[i];
+                var updated_name = names[i];
+                document.getElementById("Members_Image").src = updated_image;
+                document.getElementById("Member_Name").innerHTML = updated_name;
+            }
+        </script>
+    </body>
+</html>

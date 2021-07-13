@@ -1,0 +1,23 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: pink;
+    text-align: center;
+}
+h1{
+    font-size: 35px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+}
+#Member_Name{
+    font-style: italic;
+}
+#Members_Image{
+    height: 300px;
+    width: 300px;
+}
+#Next_Button{
+    font-size: 16px;
+    width: 50px;
+}
